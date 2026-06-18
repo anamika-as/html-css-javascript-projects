@@ -36,10 +36,9 @@ input[type=text]{
 }
 .listItem{    
     display:flex;
+    gap:10px;
 }
 .listItem p{
     flex-grow:2;
 }
-.listItem input[type=checkbox]{
-    margin-right:10px;
-}
+
