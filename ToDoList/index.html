@@ -14,22 +14,14 @@
             <button class="addBtn">ADD</button>
         </div>
         <ul>
-            <li class="listItem">study HTML</li>   
+            <li class="listItem">
+                <input type="checkbox" name="" id="">
+                <p>Study HTML</p>
+                <span id="deleteBtn">Delete</span>    
+            </li> 
+             
         </ul>
     </div>
 </body>
-<script>  
-    const addBtn = document.querySelector(".addBtn");
-    function addTask(task){
-        const taskItem = document.createElement("li");
-        taskItem.textContent = task;
-        document.querySelector("ul").append(taskItem);
-    }
-    addBtn.addEventListener("click",function (e){
-        const taskInput = document.querySelector("input[type=text]");
-        console.log(taskInput);
-        addTask(taskInput.value);    
-        taskInput.value = "" 
-    },false);    
-</script>
+<script src="script.js"></script>
 </html>
